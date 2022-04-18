@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looms Handicrafts</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+                <h3>Looms</h3>
+            </div>
+            <div class="wrapper">
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li style="padding-left: 0px;">
+                        <a href="">Trending</a>
+                    </li>
+                    <li>
+                        <a href="">Our Stories</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/cart-icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="banner-heading">
+                <h1>Globalizing Local Artistry</h1>
+            </div>
+            <div class="banner-decoration">
+                <img src="assets/banner-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="shopping">
+        <div class="shopping-inner">
+            <div class="shopping-title">
+                <h4>
+                    Top Products
+                </h4>
+            </div>
+            <div class="shopping-filters">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">India</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Morocco</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Afghanistan</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="cards-list tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-attar.jpg" alt="" width="200px">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rajasthan</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Attar Perfume</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$59.99</p>
+                            </div>
+                            <button class="view-story-btn btn btn-secondary" id="show">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </button>
+                            <div class="modal" id="modal">
+                                <button id="close">X</button>
+                                <div class="modal-inner">
+                                    <div class="modal-heading">
+                                        <h1>Meet Pranay</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-container-1">
+                                            <div class="modal-container-text" style="margin-right: 2rem;">
+                                                From Kannauj, India, Pranay handcrafts “Attar”, a perfume using an ancient method.
+                                                <br>
+                                                <br>
+                                                This ensures that the Attar is free from any Alcohol or artificial chemicals.
+                                            </div>
+                                            <img src="assets/pranay.png" width="350px" alt="">
+                                        </div>
+                                        <div class="modal-container-1" style="margin-top: 3rem;">
+                                            <img src="assets/attar.png" width="350px" alt="">
+                                            <div class="modal-container-text" style="margin-left: 2rem;">
+                                                <h3>“Recreating the smell of rain on Earth”</h3>
+                                                <br>
+                                                <br>
+                                                Being one of the last places in the world to produce perfume using this technique, the result is 100% pure perfume.
+                                            </div>
+                                        </div>
+                                        <div class="view-products" style="text-align: center; margin-top: 3rem;" >
+                                            <a href="">View All Products by Pranay →</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-marble.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Delhi</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Marble Painting</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$85.45</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-carpet.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Jaipur</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Woven Wool Carpet</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$125.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-bag.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Hyderabad</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Shoulder Bag</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$38.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/inida-earring.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rajasthan</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Round Earring</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$12.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-hat.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Kolkata</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Leather Embroidered Hat</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$25.07</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-painting.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Delhi</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Traditional Bride Painting 24x30</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$97.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/india-pot.png" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Kerala</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Khurja Pottery Desk Pot</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$59.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="cards-list tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/morocco-rug.png" width="200px" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rabat</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Azilal Traditional Rug</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$12.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/morocco-sandal.png" width="200px"  alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rabat</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Traditional Belgha</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$25.07</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/morocco-cups.png" width="200px" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rabat</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Handcrafted Tea Cups</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$97.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="assets/products/morocco-vase.png" width="200px" alt="">
+                        </div>
+                        <div class="product-location-badge">
+                            <img src="assets/location-icon.png" alt="">
+                            <p>Rabat</p>
+                        </div>
+                        <div class="product-title">
+                            <p>Vintage Ceramic Vase</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-cost">
+                                <p>$59.99</p>
+                            </div>
+                            <div class="view-story-btn btn btn-secondary">
+                                <img src="assets/view-icon.png" alt="">
+                                View Story
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-list tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    margin: 0 !important;
+
+}
+
+.header-inner {
+    padding: 1rem;
+    display: flex;
+    max-width: 1344px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.logo h3 {
+    margin-left: -10px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+    padding-left: 6rem;
+}
+
+.label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+    margin-bottom: 1rem;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-bar a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar li {
+    padding-left: 3rem;
+}
+
+.banner-inner {
+    display: flex;
+    max-width: 1344px;
+    height: 543px;
+    background-color: #F6FCFF;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.banner-heading {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    padding-left: 5rem;
+}
+
+.banner-decoration {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5rem;
+}
+
+.shopping-inner {
+    max-width: 1344px;
+    margin: auto;
+}
+
+.shopping {
+    padding-top: 3rem;
+    margin-bottom: 5rem
+}
+
+.shopping-title h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.shopping-filters ul{
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.shopping-filters {
+    padding-top: 1rem;
+}
+
+.nav-link.active {
+    background-color: #E4E5E5 !important;
+    border-radius: 20px !important;
+}
+
+.product-card {
+    height: 363px;
+    width: 300px;
+    border: 1px solid #E7E7E7;
+}
+
+.product-img {
+    text-align: center;
+    height: 217px;
+    padding: 5px;
+}
+
+.product-location-badge img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.product-location-badge {
+    display: flex;
+    width: fit-content;
+    background-color: #F5F5F5;
+    padding: 7px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-left: 9px;
+    align-items: center;
+}
+
+.product-location-badge p {
+    margin-bottom: 0;
+    color: #5B5B5B;
+    font-size: 12px;
+}
+
+.product-title {
+    padding-top: 5px;
+    margin-left: 9px;
+}
+
+.product-cost {
+    margin-left: 9px;
+    padding-top: 12px;
+}
+
+.product-card-footer {
+    display: flex;
+}
+
+.view-story-btn {
+    margin-left: auto;
+    margin-right: 9px;
+    height: fit-content;
+}
+
+.view-story-btn:hover {
+    border-color: #007CB8 !important;
+    background-color: #007CB8 !important;
+}
+
+.view-story-btn img {
+    margin-bottom: 3px;
+}
+
+.cards-list.active {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  z-index: 88;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+#close {
+  float: right;
+  margin: 10px 10px 0 0;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-inner{
+    padding: 5rem;
+    margin: auto;
+    max-width: 1344px;
+
+}
+
+.modal-container-1 {
+    display: flex;
+}
+
+
+</style>
+
+<script>
+    const show = document.getElementById("show");
+
+const modal = document.getElementById("modal");
+
+const close = document.getElementById("close");
+
+show.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+close.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+</script>
+</html>
